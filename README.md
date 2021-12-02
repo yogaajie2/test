@@ -14,6 +14,8 @@ Install Tailwind dan dependencies lainnya menggunakan `npm`
 
 Kita juga harus menginstall CRACO untuk bisa mengkonfigurasi Tailwind
 
+### `npm install @craco/craco`
+
 ## Install Axios
 
 ### `npm install axios`
