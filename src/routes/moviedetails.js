@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useParams } from "react-router-dom";
 
 export default function MovieDetails() {
-  const { id } = useParams();
+  const id  = useParams();
   const [movieDetails, SetMovieDetails] = useState({});
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function MovieDetails() {
       }
     };
     fetch();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Layout>
