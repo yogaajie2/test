@@ -2,6 +2,8 @@
 
 Project ini dibuat menggunakan [Create React App](https://github.com/facebook/create-react-app), [Tailwind CSS](https://tailwindcss.com/), dan [Axios](https://axios-http.com/)
 
+## Live Site: [https://nervous-heyrovsky-e70f50.netlify.app/](https://nervous-heyrovsky-e70f50.netlify.app/)
+
 ## Install Tailwind CSS
 
 Install Tailwind dan dependencies lainnya menggunakan `npm`
