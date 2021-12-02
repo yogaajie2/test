@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { 
+  BrowserRouter,
+  Routes,
+  Route 
+} from "react-router-dom";
 import './index.css';
 import App from './App';
+import Genres from "./routes/genres";
+import Movies from "./routes/movies";
+import MovieDetails from "./routes/moviedetails";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="genres" element={<Genres />} />
+      <Route path="movies" element={<Movies />} />
+      <Route path="moviedetails/:id" element={<MovieDetails />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
